@@ -1,8 +1,8 @@
 class Transfer
   # your code here
-  def initialize(from, to, amnt)
-    @from=from
-    @to = to
+  def initialize(sender, receiver, amnt)
+    @sender=sender
+    @receiver = receiver
     @amnt=amnt
   end
 end
