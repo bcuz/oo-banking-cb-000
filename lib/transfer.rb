@@ -20,7 +20,7 @@ class Transfer
     # p @sender.valid?
 
     # doesnt even go to this branch because it showing up as valid!!!! wtf
-    if !valid?
+    if !valid? or @sender.balance < @amount
       return "Transaction rejected. Please check your account balance."
       @status = 'rejected'
 
