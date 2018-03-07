@@ -21,8 +21,9 @@ class Transfer
 
     # doesnt even go to this branch because it showing up as valid!!!! wtf
     if !valid? or @sender.balance < @amount
-      return "Transaction rejected. Please check your account balance."
       @status = 'rejected'
+      return "Transaction rejected. Please check your account balance."
+      
 
     elsif @status != "complete"
     @sender.balance -= @amount
