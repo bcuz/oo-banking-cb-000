@@ -17,7 +17,7 @@ class Transfer
 
   def execute_transaction
     # doesnt make sense that this would be valid for this test
-    p @sender.valid?
+    # p @sender.valid?
     if !@sender.valid?
       return "Transaction rejected. Please check your account balance."
 
