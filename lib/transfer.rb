@@ -10,7 +10,7 @@ class Transfer
   end
 
   def valid?
-    # sender will be an instance?
+    # instances?
     @sender.valid? and @receiver.valid?
 
   end
