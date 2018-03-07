@@ -17,7 +17,7 @@ class Transfer
 
   def execute_transaction
 
-    if !valid?
+    if !@sender.valid?
       return "Transaction rejected. Please check your account balance."
 
 
