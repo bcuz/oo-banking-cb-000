@@ -12,5 +12,6 @@ class Transfer
   def valid?
     # sender will be an instance?
     @sender.valid?
+    @receiver.valid?
   end
 end
