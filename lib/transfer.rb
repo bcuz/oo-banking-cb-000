@@ -20,7 +20,7 @@ class Transfer
     # p @sender.valid?
     if !valid?
       return "Transaction rejected. Please check your account balance."
-
+      @status = 'rejected'
 
     elsif @status != "complete"
     @sender.balance -= @amount
