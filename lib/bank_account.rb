@@ -8,6 +8,7 @@ class BankAccount
   end
 
   def deposit(amnt)
+    @balance += amnt
 
   end
 end
